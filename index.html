@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Application</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="Icon" href="image.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css">
+</head>
+<body>
+    <div class="calculator"> 
+        <input type="text" id="display">
+        <div class="buttons">
+            <button  onclick="clearDisplay()">C</button>
+            <button><i class='bx bx-comment-x'></i></button>
+            <button  onclick="itemsDisplay('+')">+</button>
+            <button  onclick="itemsDisplay('-')">-</button>
+            
+            <button onclick="itemsDisplay('7')">7</button>
+            <button onclick="itemsDisplay('8')">8</button>
+            <button onclick="itemsDisplay('9')">9</button>
+            <button  onclick="itemsDisplay('*')">*</button>
+            
+            <button onclick="itemsDisplay('4')">4</button>
+            <button onclick="itemsDisplay('5')">5</button>
+            <button onclick="itemsDisplay('6')">6</button>
+            <button onclick="itemsDisplay('/')">/</button>
+            
+            <button onclick="itemsDisplay('1')">1</button>
+            <button onclick="itemsDisplay('2')">2</button>
+            <button onclick="itemsDisplay('3')">3</button>
+            <button onclick="itemsDisplay('.')">.</button>
+            
+            <button onclick="itemsDisplay('0')">0</button>
+            <button onclick="itemsDisplay('00')">00</button>
+            <button class="equal" onclick="calculate()">=</button>
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
